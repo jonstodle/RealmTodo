@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RealmTodo", "RealmTodo\RealmTodo.shproj", "{6AA6E958-7BBB-437B-8813-EF2F6F853D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealmTodo.iOS", "iOS\RealmTodo.iOS.csproj", "{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Release|iPhone.Build.0 = Release|iPhone
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{215C3BCE-AF22-4004-AE3F-1EA908A9FDB2}.Debug|iPhone.Build.0 = Debug|iPhone
+	EndGlobalSection
+EndGlobal
