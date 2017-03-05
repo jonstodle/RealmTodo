@@ -11,6 +11,8 @@ namespace RealmTodo
 		public MainPage()
 		{
 			InitializeComponent();
+
+			PersonListView.ItemsSource = App.Realm.All<Person>().OrderBy(x => x.Name).AsRealmCollection();
 		}
 
 		async void AddPersonToolbarItem_Clicked(object sender, EventArgs e)
