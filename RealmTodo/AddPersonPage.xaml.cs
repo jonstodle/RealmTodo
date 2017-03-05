@@ -15,7 +15,7 @@ namespace RealmTodo
 		void SaveToolbarItem_Clicked(object sender, EventArgs e)
 		{
 			if (string.IsNullOrWhiteSpace(NameEntry.Text)) return;
-			// TODO: Add person to Realm
+			App.Realm.Write(() => App.Realm.Add(new Person { Name = NameEntry.Text }));
 		}
 	}
 }
