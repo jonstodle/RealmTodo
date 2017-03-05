@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Realms;
+using Xamarin.Forms;
 
 namespace RealmTodo
 {
@@ -10,6 +11,8 @@ namespace RealmTodo
 
 			MainPage = new NavigationPage(new MainPage());
 		}
+
+		public static Realm Realm = Realm.GetInstance();
 
 		protected override void OnStart()
 		{
