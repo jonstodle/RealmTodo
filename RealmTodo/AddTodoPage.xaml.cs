@@ -7,15 +7,19 @@ namespace RealmTodo
 {
 	public partial class AddTodoPage : ContentPage
 	{
-		public AddTodoPage()
+		public AddTodoPage(Person person)
 		{
 			InitializeComponent();
+
+			this.person = person;
 		}
 
 		void SaveToolbarItem_Clicked(object sender, EventArgs e)
 		{
 			if (string.IsNullOrWhiteSpace(NameEntry.Text)) return;
-			// TODO: Add todo to Realm
+			App.Realm.Write(() => App.Realm.Add(new Todo { Name = NameEntry.Text, Assignee = person }));
 		}
+
+		Person person;
 	}
 }
