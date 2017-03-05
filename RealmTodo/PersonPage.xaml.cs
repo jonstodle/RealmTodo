@@ -19,7 +19,7 @@ namespace RealmTodo
 
 		async void AddTodoToolbarItem_Clicked(object sender, EventArgs e)
 		{
-			await Navigation.PushAsync(new AddTodoPage());
+			await Navigation.PushAsync(new AddTodoPage(person));
 		}
 
 		void TodoListView_ItemTapped(object sender, ItemTappedEventArgs e)
