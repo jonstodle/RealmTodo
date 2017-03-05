@@ -20,9 +20,10 @@ namespace RealmTodo
 			await Navigation.PushAsync(new AddPersonPage());
 		}
 
-		void PersonListView_ItemTapped(object sender, ItemTappedEventArgs e)
+		async void PersonListView_ItemTapped(object sender, ItemTappedEventArgs e)
 		{
-			// TODO: Navigate to person page
+			var person = e.Item as Person;
+			await Navigation.PushAsync(new PersonPage(person));
 		}
 	}
 }

@@ -8,9 +8,12 @@ namespace RealmTodo
 {
 	public partial class PersonPage : ContentPage
 	{
-		public PersonPage()
+		public PersonPage(Person person)
 		{
 			InitializeComponent();
+
+			this.person = person;
+			Title = person.Name;
 		}
 
 		async void AddTodoToolbarItem_Clicked(object sender, EventArgs e)
@@ -22,5 +25,7 @@ namespace RealmTodo
 		{
 			// TODO: Toggle IsDone
 		}
+
+		Person person;
 	}
 }
