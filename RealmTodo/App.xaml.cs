@@ -8,7 +8,7 @@ namespace RealmTodo
 		{
 			InitializeComponent();
 
-			MainPage = new RealmTodoPage();
+			MainPage = new Page();
 		}
 
 		protected override void OnStart()
