@@ -24,7 +24,8 @@ namespace RealmTodo
 
 		void TodoListView_ItemTapped(object sender, ItemTappedEventArgs e)
 		{
-			// TODO: Toggle IsDone
+			var todo = e.Item as Todo;
+			App.Realm.Write(() => todo.IsDone = !todo.IsDone);
 		}
 
 		Person person;
