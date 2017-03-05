@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RealmTodo.PersonPage"
+	xmlns:local="clr-namespace:RealmTodo">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Add" Clicked="AddTodoToolbarItem_Clicked"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:IsDoneToColorConverter x:Key="IDTCConverter"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	
+	<ContentPage.Content>
+		<ListView x:Name="TodoListView" VerticalOptions="Fill" ItemTapped="TodoListView_ItemTapped">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding Name}" TextColor="{Binding IsDone, Converter={StaticResource IDTCConverter}}"/>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
