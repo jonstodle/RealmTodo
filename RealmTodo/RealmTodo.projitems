@@ -40,5 +40,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)PersonPage.xaml.cs">
       <DependentUpon>PersonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Todo.cs" />
   </ItemGroup>
 </Project>
