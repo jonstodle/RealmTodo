@@ -14,6 +14,7 @@ namespace RealmTodo
 
 			this.person = person;
 			Title = person.Name;
+			TodoListView.ItemsSource = App.Realm.All<Todo>().Where(x => x.Assignee == person).OrderBy(x => x.Name).AsRealmCollection();
 		}
 
 		async void AddTodoToolbarItem_Clicked(object sender, EventArgs e)
