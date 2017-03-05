@@ -12,7 +12,13 @@ namespace RealmTodo
 			MainPage = new NavigationPage(new MainPage());
 		}
 
-		public static Realm Realm = Realm.GetInstance();
+		static App()
+		{
+			var realmConfig = new RealmConfiguration { ShouldDeleteIfMigrationNeeded = true };
+			Realm = Realm.GetInstance(realmConfig);
+		}
+
+		public static Realm Realm;
 
 		protected override void OnStart()
 		{
