@@ -62,7 +62,7 @@
 
 ### 08
 
-* Realm er en relasjonsdatabase
+* Realm er ikke en relasjonsdatabase, det er en objektdatabase
     * “Tabeller” med rader og kolonner
     * En-til-en-relasjoner
     * En-til-mange-relasjoner
