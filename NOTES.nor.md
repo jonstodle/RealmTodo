@@ -83,6 +83,28 @@
     * Varsling ved endring
 * Integrerer med plattforms system for GUI-oppdateringer
 
+<details>
+  <summary>Spørringer</summary>
+  <h4>Swift/Obj-C</h4>
+  <ul>
+    <li><code>NSPredicate</code>-syntaks</li>
+  </ul>
+  <h4>C#</h4>
+  <ul>
+    <li><code>IQueryable</code>-syntaks (lik Linq)</li>
+  </ul>
+  <h4>JavaScript</h4>
+  <ul>
+    <li>Bruker "chaining" av funksjoner</li>
+    <li>Egne funksjoner for Realm</li>
+  </ul>
+  <h4>Java</h4>
+  <ul>
+    <li>Bruker "chaining" av funksjoner</li>
+    <li>Egne funksjoner for Realm</li>
+  </ul>
+</details>
+
 ### 10
 
 * Veldig høy ytelse
