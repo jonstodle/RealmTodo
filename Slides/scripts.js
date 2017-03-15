@@ -10,11 +10,15 @@ function handleBodyResize() {
 }
 
 function handleBodyKeyDown(ev) {
-    const nextSlideTriggers = "ArrowRight Space Enter";
-    const prevSlideTriggers = "ArrowLeft Backspace";
-    if(nextSlideTriggers.indexOf(ev.key) >= 0) currentSlide++;
-    else if(prevSlideTriggers.indexOf(ev.key) >= 0) currentSlide--;
-    updateSlidesDisplay();
+    const nextSlideTriggers = "ArrowDown ArrowRight Space Enter";
+    const prevSlideTriggers = "ArrowUp ArrowLeft Backspace";
+
+    if(nextSlideTriggers.indexOf(ev.key) >= 0) updateSlidesDisplay(1);
+    else if(prevSlideTriggers.indexOf(ev.key) >= 0) updateSlidesDisplay(-1);
+}
+
+function handleBodyMouseDown(ev) {
+    if(ev.button === 0) updateSlidesDisplay(1);
 }
 
 function setContentSize(padding){
@@ -30,9 +34,12 @@ function setContentSize(padding){
     document.documentElement.style.fontSize = (content.clientHeight * .03) + "px";
 }
 
-function updateSlidesDisplay() {
+function updateSlidesDisplay(delta) {
+    if(!delta) delta = 0;
+
     const slides = document.getElementsByClassName("slide");
 
+    currentSlide += delta;
     if(currentSlide < 0) currentSlide = slides.length -1;
     else if(currentSlide >= slides.length) currentSlide = 0;
 
