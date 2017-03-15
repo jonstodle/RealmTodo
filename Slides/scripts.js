@@ -44,6 +44,7 @@ function updateSlidesDisplay(delta) {
     else if(currentSlide >= slides.length) currentSlide = 0;
 
     for(var i = 0; i < slides.length; i++){
-        slides[i].style.display = i === currentSlide ? "flex" : "none";
+        slides[i].classList.remove("visible");
+        if(i === currentSlide) slides[i].classList.add("visible");
     }
 }

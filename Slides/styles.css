@@ -21,6 +21,10 @@ body{
     align-items: stretch;
 }
 
+.slide.visible{
+    display: flex;
+}
+
 /**************************************
 
 FLEX HELPERS
