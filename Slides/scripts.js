@@ -10,8 +10,10 @@ function handleBodyResize() {
 }
 
 function handleBodyKeyDown(ev) {
-    if(ev.key === "ArrowRight") currentSlide++;
-    else if(ev.key === "ArrowLeft") currentSlide--;
+    const nextSlideTriggers = "ArrowRight Space Enter";
+    const prevSlideTriggers = "ArrowLeft Backspace";
+    if(nextSlideTriggers.indexOf(ev.key) >= 0) currentSlide++;
+    else if(prevSlideTriggers.indexOf(ev.key) >= 0) currentSlide--;
     updateSlidesDisplay();
 }
 
