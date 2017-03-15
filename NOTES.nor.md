@@ -66,6 +66,7 @@
     * “Tabeller” med rader og kolonner
     * En-til-en-relasjoner
     * En-til-mange-relasjoner
+* Følger ACID
 * Ingen forhåndsdefinering av schema
     * Baseres på klassene du ønsker å lagre
     * Henter indeksering/primærnøkkel fra klasse
