@@ -125,7 +125,7 @@
 ### 13
 
 * Modent produkt
-* Ble startet i 2012
+* Ble startet i 2011
 * Offentlig slipp i 2014
 
 # Demo
