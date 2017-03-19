@@ -43,8 +43,7 @@
 
 * For mobile platformer
 * iOS, MacOS, Android, Xamarin, React Native, Win32
-* UWP er planlagt
-    * Ingen tidsramme
+* UWP er på vei og vil slippes snart
 
 ### 06
 
